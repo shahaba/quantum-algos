@@ -4,7 +4,7 @@ from qutip import Qobj as Q
 
 
 class Circuit():
-    """Encode Quantum Circuit outlined in Paper
+    """Encode Quantum Circuit by Romero et al.
 
     Convert the two programmable circuits employed as autoencoder models via
     the decomposition as described by Ref 16. We can simulate the circuits by
@@ -33,6 +33,7 @@ class Circuit():
         # ground states = training set
         self.input_state = input_state
 
+    # TODO: implement visualization of circuit unit cells
     def visualize_circuits(self):
         """ Visualization of Circuits using QuTip library
         """
@@ -59,7 +60,7 @@ class Circuit():
 
     @staticmethod
     def measure_overlap(meas_state, state):
-        """ Measure Overlap or Fidelity between Trash and Encoded States
+        """ Measure Overlap (Fidelity) between Trash and Encoded States
 
         Args:
             meas_state:
