@@ -17,3 +17,7 @@ A single iteration of the algorithm can be broken down into the following steps:
 2. Evolve the input under the encoding unitary, where p is the set of parameters at a given optimization step
 3. Measure the fidelity between the trash state and the reference state via a SWAP test
 4. Apply cost function to the classical optimization routine and return a new set of parameters for the encoding unitary.
+
+
+
+## Project 2: ...
